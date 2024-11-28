@@ -1,6 +1,6 @@
 Feature: Automating User page Functionality
 
-  @Regression @SmokeTest
+  @Regression @SmokeTest @FunctionalTest
   Scenario Outline: Verify login functionality with valid credentials for user module
     Given verify user navigates the URL "<appURL>"
     And verify user enters valid credentials "<userName>" and "<password>"
@@ -10,7 +10,7 @@ Feature: Automating User page Functionality
       | http://localhost/login.do | admin    |  | manager  |
 
 
-  @Regression @SmokeTest
+  @Regression @SmokeTest @FunctionalTest
   Scenario Outline: Verify Create and delete user functionality for module
     Given verify user navigates the URL "<appURL>"
     And verify user enters valid credentials "<userName>" and "<password>"
