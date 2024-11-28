@@ -1,6 +1,6 @@
 Feature: Automating Login page Functionality
 
-  @Regression @SmokeTest
+  @Regression @SmokeTest @FunctionalTest
   Scenario: Verify login functionality with valid credentials for login module
     Given verify user navigates the URL
       | appURL                    |
@@ -11,7 +11,7 @@ Feature: Automating Login page Functionality
     And verify user logout from the application
 
 
-  @Regression @SmokeTest
+  @Regression @SmokeTest @FunctionalTest
   Scenario: Verify Create and delete user functionality for login module
     Given verify user navigates the URL
       | appURL                    |
